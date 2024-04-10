@@ -1,0 +1,2 @@
+import r from"buffer";var e={};var f=r.Buffer;var t=r.SlowBuffer;e=bufferEq;function bufferEq(r,e){if(!f.isBuffer(r)||!f.isBuffer(e))return false;if(r.length!==e.length)return false;var t=0;for(var u=0;u<r.length;u++)t|=r[u]^e[u];return 0===t}bufferEq.install=function(){f.prototype.equal=t.prototype.equal=function equal(r){return bufferEq(this,r)}};var u=f.prototype.equal;var o=t.prototype.equal;bufferEq.restore=function(){f.prototype.equal=u;t.prototype.equal=o};var a=e;export default a;
+

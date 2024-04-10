@@ -1,0 +1,2 @@
+import t from"./agent.js";import"net";import"tls";import"url";import"assert";import"debug";import"agent-base";import"buffer";var e={};var r=e&&e.__importDefault||function(t){return t&&t.__esModule?t:{default:t}};const o=r(t);function createHttpsProxyAgent(t){return new o.default(t)}(function(t){t.HttpsProxyAgent=o.default;t.prototype=o.default.prototype})(createHttpsProxyAgent||(createHttpsProxyAgent={}));e=createHttpsProxyAgent;var p=e;export{p as default};
+

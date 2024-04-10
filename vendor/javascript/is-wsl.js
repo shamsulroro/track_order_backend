@@ -1,0 +1,2 @@
+import r from"os";import o from"fs";import e from"is-docker";import t from"process";var s={};var c=t;const f=r;const i=o;const n=e;const isWsl=()=>{if("linux"!==c.platform)return false;if(f.release().toLowerCase().includes("microsoft"))return!n();try{return!!i.readFileSync("/proc/version","utf8").toLowerCase().includes("microsoft")&&!n()}catch(r){return false}};s=c.env.__IS_WSL_TEST__?isWsl:isWsl();var a=s;export default a;
+

@@ -1,0 +1,3 @@
+import r from"buffer";var e={};var s=r.Buffer;Object.defineProperty(e,"__esModule",{value:true});e.GaxiosError=void 0;
+/* eslint-disable @typescript-eslint/no-explicit-any */class GaxiosError extends Error{constructor(r,e,s){super(r);this.response=s;this.config=e;this.response.data=translateData(e.responseType,s.data);this.code=s.status.toString()}}e.GaxiosError=GaxiosError;function translateData(r,e){switch(r){case"stream":return e;case"json":return JSON.parse(JSON.stringify(e));case"arraybuffer":return JSON.parse(s.from(e).toString("utf8"));case"blob":return JSON.parse(e.text());default:return e}}const t=e.__esModule;const a=e.GaxiosError;export{a as GaxiosError,t as __esModule,e as default};
+

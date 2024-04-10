@@ -1,0 +1,9 @@
+<div style="text-align: center;">
+  <h3><%= link_to 'Sign In to Google', @auth_uri %></h3>
+
+  <div data-turbo="false">
+    <%= form_tag("/auth/microsoft_graph_auth", method: "post") do %>
+      <button type="submit" class="btn btn-primary btn-large">Sign In to Outlook</button>
+    <% end %>
+  </div>
+</div>

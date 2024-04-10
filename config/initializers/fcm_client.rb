@@ -1,0 +1,3 @@
+require 'fcm'
+
+FCM_CLIENT = FCM.new(ENV['GOOGLE_FCM_SERVER_KEY'])
